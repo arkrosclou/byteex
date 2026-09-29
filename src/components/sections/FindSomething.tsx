@@ -1,25 +1,27 @@
 import { Cta } from '../Cta'
-import { Img } from '../Img'
 
 import type { Home } from '@/lib/content'
+import { CollageLayout1 } from '@/components/collages/CollageLayout1'
 
 export function FindSomething({ data }: { data: Home['findSomething'] }) {
   return (
-    <section aria-labelledby="find-something-title">
-      <h2 id="find-something-title" className="text-h2 text-brand">
-        {data.title}
-      </h2>
-      <p>{data.lead}</p>
+    <section
+      aria-labelledby="find-something-title"
+      className="overflow-x-clip pt-20"
+    >
+      <div className="container-page text-center">
+        <h2 id="find-something-title" className="section-title">
+          {data.title}
+        </h2>
+        <p className="mx-auto mt-5 max-w-lead">{data.lead}</p>
 
-      <ul>
-        {data.images.map((image) => (
-          <li key={image.file}>
-            <Img src={image.file} alt={image.alt} />
-          </li>
-        ))}
-      </ul>
+        <div className="mx-auto mt-10 max-w-collage">
+          <CollageLayout1 images={data.images} />
+        </div>
 
-      <Cta cta={data.cta} stars={data.stars} ratingLabel={data.ratingLabel} />
+        {/* no rating line here: the design puts that in the trust bar */}
+        <Cta cta={data.cta} className="mt-12" />
+      </div>
     </section>
   )
 }
