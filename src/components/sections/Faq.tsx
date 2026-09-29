@@ -5,7 +5,9 @@ import type { Home } from '@/lib/content'
 export function Faq({ data }: { data: Home['faq'] }) {
   return (
     <section aria-labelledby="faq-title">
-      <h2 id="faq-title">{data.title}</h2>
+      <h2 id="faq-title" className="text-h2">
+        {data.title}
+      </h2>
 
       {/* Native details/summary: the accordion works with no script,
           keyboard included. The first one is open, as in the design. */}

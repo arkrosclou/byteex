@@ -7,7 +7,9 @@ import type { Home } from '@/lib/content'
 export function Testimonials({ data }: { data: Home['testimonials'] }) {
   return (
     <section aria-labelledby="testimonials-title">
-      <h2 id="testimonials-title">{data.title}</h2>
+      <h2 id="testimonials-title" className="text-h2">
+        {data.title}
+      </h2>
       <p>{data.lead}</p>
 
       <ul aria-label="Photos from our customers">
@@ -23,7 +25,7 @@ export function Testimonials({ data }: { data: Home['testimonials'] }) {
           <li key={`${item.name}-${i}`}>
             <figure>
               <Stars value={item.stars} />
-              <figcaption>{item.name}</figcaption>
+              <figcaption className="text-small">{item.name}</figcaption>
               <blockquote>
                 <p>{item.text}</p>
               </blockquote>

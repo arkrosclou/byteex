@@ -7,7 +7,7 @@ type Props = Pick<Global, 'shippingNote' | 'payments' | 'trustItems'>
 
 export function TrustBar({ shippingNote, payments, trustItems }: Props) {
   return (
-    <footer>
+    <footer className="text-small">
       <p>{shippingNote}</p>
       <Img src={payments.file} alt={payments.alt} />
 
