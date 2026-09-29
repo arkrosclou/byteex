@@ -21,7 +21,7 @@ export function CollageLayout1({ images }: CollageLayout1Props) {
         'before:absolute before:top-1/2 before:left-0 before:z-1 before:block before:h-[45%] before:w-full before:-translate-y-1/2 before:brand-gradient'
       )}
     >
-      {images.slice(0, COLLAGE.length).map((image, i) => (
+      {images.map((image, i) => (
         <li key={image.file} className={COLLAGE[i % 3]}>
           <Img
             src={image.file}

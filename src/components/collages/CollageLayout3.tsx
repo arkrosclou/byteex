@@ -17,7 +17,6 @@ export function CollageLayout3({ images }: CollageLayout3Props) {
   return (
     <ul
       className={cx(
-        'border border-red-300',
         'relative aspect-[430/600] w-full',
         // two warm panels in the gaps the photos leave
         'before:absolute before:top-[11%] before:left-[8%] before:z-1 before:h-[31%] before:w-[38%] before:brand-gradient',

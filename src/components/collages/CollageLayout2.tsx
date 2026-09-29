@@ -8,7 +8,7 @@ interface CollageLayout2Props {
 
 const COLLAGE = [
   'top-0 left-0 z-2 w-[35%] border-3 border-white',
-  'top-1/2 left-1/2 z-1 -translate-1/2 w-auto h-[80%]',
+  'top-1/2 left-1/2 z-1 aspect-[380/570] -translate-1/2 w-auto h-[80%]',
   'bottom-0 right-0 z-2 w-[25%] border-3 border-white',
 ]
 
