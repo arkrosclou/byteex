@@ -1,0 +1,341 @@
+{
+  "meta": {
+    "title": "Byteex - Don't apologize for being comfortable.",
+    "description": "Consciously made butter soft staples for every day (or night). Beautiful, comfortable loungewear, ethically sourced and responsibly made."
+  },
+  "hero": {
+    "title": "Don't apologize for being comfortable.",
+    "bullets": [
+      {
+        "icon": "sun-moon",
+        "text": "Beautiful, comfortable loungewear for day or night."
+      },
+      {
+        "icon": "cart",
+        "text": "No wasteful extras, like tags or plastic packaging."
+      },
+      {
+        "icon": "waves",
+        "text": "Our signature fabric is incredibly comfortable — unlike anything you've ever felt."
+      }
+    ],
+    "cta": {
+      "label": "Customize Your Outfit",
+      "href": "#"
+    },
+    "review": {
+      "avatar": "/images/home/hero/review/avatar.jpg",
+      "name": "Amy P.",
+      "stars": 5,
+      "ratingLabel": "One of 500+ 5 Star Reviews Online",
+      "text": "Overjoyed with my Loungewear set. I have the jogger and the sweatshirt. Quality product on every level. From the compostable packaging, to the supplied washing bag, even the garments smells like fresh herbs when I first held them."
+    },
+    "images": [
+      {
+        "file": "/images/home/hero/images/0/file.jpg",
+        "alt": "Model in a patterned lounge set"
+      },
+      {
+        "file": "/images/home/hero/images/1/file.jpg",
+        "alt": "Model wearing the white robe"
+      },
+      {
+        "file": "/images/home/hero/images/2/file.jpg",
+        "alt": "Model reading on a sofa in loungewear"
+      }
+    ]
+  },
+  "asSeenIn": {
+    "label": "as seen in",
+    "logos": [
+      {
+        "file": "/images/home/asSeenIn/logos/0/file.png",
+        "alt": "Eco-Stylist"
+      },
+      {
+        "file": "/images/home/asSeenIn/logos/1/file.png",
+        "alt": "Canadian Living"
+      },
+      {
+        "file": "/images/home/asSeenIn/logos/2/file.png",
+        "alt": "Jillian Harris"
+      },
+      {
+        "file": "/images/home/asSeenIn/logos/3/file.png",
+        "alt": "The Eco Hub"
+      },
+      {
+        "file": "/images/home/asSeenIn/logos/4/file.png",
+        "alt": "Trendhunter"
+      }
+    ]
+  },
+  "product": {
+    "title": "Loungewear you can be proud of.",
+    "items": [
+      {
+        "icon": "cart",
+        "title": "Ethically sourced.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat."
+      },
+      {
+        "icon": "leaf",
+        "title": "Responsibly made.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat."
+      },
+      {
+        "icon": "sun-moon",
+        "title": "Made for living in.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat."
+      },
+      {
+        "icon": "waves",
+        "title": "Unimaginably comfortable.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat."
+      }
+    ],
+    "gallery": [
+      {
+        "file": "/images/home/product/gallery/0/file.jpg",
+        "alt": "White robe, front view"
+      },
+      {
+        "file": "/images/home/product/gallery/1/file.jpg",
+        "alt": "White robe, patterned set"
+      },
+      {
+        "file": "/images/home/product/gallery/2/file.jpg",
+        "alt": "White robe worn on a sofa"
+      },
+      {
+        "file": "/images/home/product/gallery/3/file.jpg",
+        "alt": "White robe, detail of the tie"
+      },
+      {
+        "file": "/images/home/product/gallery/4/file.jpg",
+        "alt": "White robe, sleeve detail"
+      },
+      {
+        "file": "/images/home/product/gallery/5/file.jpg",
+        "alt": "White robe, side view"
+      },
+      {
+        "file": "/images/home/product/gallery/6/file.jpg",
+        "alt": "White robe, back view"
+      },
+      {
+        "file": "/images/home/product/gallery/7/file.jpg",
+        "alt": "White robe, full length"
+      }
+    ],
+    "caption": "White Robe"
+  },
+  "founder": {
+    "title": "Be your best self.",
+    "paragraphs": [
+      "Hi! My name's [Insert Name], and I founded [Insert] in ____.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
+      "Fusce non nibh luctus, dignissim risus quis, bibendum dolor. Donec placerat volutpat ligula, ac consectetur felis varius non. Aliquam a nunc rutrum, porttitor dolor eu, pellentesque est. Vivamus id arcu congue, faucibus libero nec, placerat ligula.",
+      "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu nisl a metus ultrices sodales.",
+      "Fusce non ante velit. Sed auctor odio eu semper molestie. Nam mattis, sapien eget lobortis fringilla, eros ipsum tristique tellus, ac convallis urna massa at nibh.",
+      "Duis non fermentum augue. Vivamus laoreet aliquam risus, sed euismod leo aliquam ut. Vivamus in felis eu lacus feugiat aliquam nec in sapien.",
+      "Cras mattis varius mollis."
+    ],
+    "images": [
+      {
+        "file": "/images/home/founder/images/0/file.jpg",
+        "alt": "Founder wearing the white robe"
+      },
+      {
+        "file": "/images/home/founder/images/1/file.jpg",
+        "alt": "Model in a patterned lounge set"
+      },
+      {
+        "file": "/images/home/founder/images/2/file.jpg",
+        "alt": "Model relaxing in loungewear"
+      }
+    ],
+    "cta": {
+      "label": "Customize Your Outfit",
+      "href": "#"
+    }
+  },
+  "comfort": {
+    "title": "Comfort made easy",
+    "cards": [
+      {
+        "icon": "cart",
+        "title": "You save.",
+        "text": "Browse our comfort sets and save 15% when you bundle."
+      },
+      {
+        "icon": "truck",
+        "title": "We ship.",
+        "text": "We ship your items within 1-2 days of receiving your order."
+      },
+      {
+        "icon": "sun-moon",
+        "title": "You enjoy!",
+        "text": "Wear hernest around the house, out on the town, or in bed."
+      }
+    ],
+    "cta": {
+      "label": "Customize Your Outfit",
+      "href": "#"
+    },
+    "stars": 5,
+    "ratingLabel": "Over 500+ 5 Star Reviews Online"
+  },
+  "testimonials": {
+    "title": "What are our fans saying?",
+    "lead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat. Fusce non nibh luctus.",
+    "strip": [
+      {
+        "file": "/images/home/testimonials/strip/0/file.jpg",
+        "alt": "Customer in the white robe"
+      },
+      {
+        "file": "/images/home/testimonials/strip/1/file.jpg",
+        "alt": "Customer in a patterned lounge set"
+      },
+      {
+        "file": "/images/home/testimonials/strip/2/file.jpg",
+        "alt": "Customer reading in loungewear"
+      },
+      {
+        "file": "/images/home/testimonials/strip/3/file.jpg",
+        "alt": "Customer in the white robe"
+      },
+      {
+        "file": "/images/home/testimonials/strip/4/file.jpg",
+        "alt": "Customer in a patterned lounge set"
+      },
+      {
+        "file": "/images/home/testimonials/strip/5/file.jpg",
+        "alt": "Customer reading in loungewear"
+      },
+      {
+        "file": "/images/home/testimonials/strip/6/file.jpg",
+        "alt": "Customer in the white robe"
+      },
+      {
+        "file": "/images/home/testimonials/strip/7/file.jpg",
+        "alt": "Customer in a patterned lounge set"
+      }
+    ],
+    "items": [
+      {
+        "name": "Jane, S.",
+        "stars": 5,
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi."
+      },
+      {
+        "name": "Jane, S.",
+        "stars": 5,
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo."
+      },
+      {
+        "name": "Jane, S.",
+        "stars": 5,
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi."
+      }
+    ],
+    "cta": {
+      "label": "Customize Your Outfit",
+      "href": "#"
+    },
+    "stars": 5,
+    "ratingLabel": "Over 500+ 5 Star Reviews Online"
+  },
+  "faq": {
+    "title": "Frequently asked questions.",
+    "items": [
+      {
+        "question": "lorem ipsum dolor sit amet",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat."
+      },
+      {
+        "question": "lorem ipsum dolor sit amet",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat."
+      },
+      {
+        "question": "lorem ipsum dolor sit amet",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat."
+      },
+      {
+        "question": "lorem ipsum dolor sit amet",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat."
+      },
+      {
+        "question": "lorem ipsum dolor sit amet",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat."
+      },
+      {
+        "question": "lorem ipsum dolor sit amet",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat."
+      }
+    ],
+    "images": [
+      {
+        "file": "/images/home/faq/images/0/file.jpg",
+        "alt": "Model in the white robe"
+      },
+      {
+        "file": "/images/home/faq/images/1/file.jpg",
+        "alt": "Model in a patterned lounge set"
+      },
+      {
+        "file": "/images/home/faq/images/2/file.jpg",
+        "alt": "Model reading in loungewear"
+      },
+      {
+        "file": "/images/home/faq/images/3/file.jpg",
+        "alt": "Model in the white robe, detail"
+      }
+    ]
+  },
+  "greenImpact": {
+    "title": "Our total green impact",
+    "stats": [
+      {
+        "icon": "cloud",
+        "value": "3,927 kg",
+        "label": "of CO2 saved"
+      },
+      {
+        "icon": "water",
+        "value": "2,546,167 days",
+        "label": "of drinking water saved"
+      },
+      {
+        "icon": "energy",
+        "value": "7,321 kWh",
+        "label": "of energy saved"
+      }
+    ]
+  },
+  "findSomething": {
+    "title": "Find something you love.",
+    "lead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
+    "images": [
+      {
+        "file": "/images/home/findSomething/images/0/file.jpg",
+        "alt": "Model in the white robe"
+      },
+      {
+        "file": "/images/home/findSomething/images/1/file.jpg",
+        "alt": "Model in a patterned lounge set"
+      },
+      {
+        "file": "/images/home/findSomething/images/2/file.jpg",
+        "alt": "Model reading in loungewear"
+      }
+    ],
+    "cta": {
+      "label": "Customize Your Outfit",
+      "href": "#"
+    },
+    "stars": 5,
+    "ratingLabel": "Over 500+ 5 Star Reviews Online"
+  }
+}
