@@ -61,3 +61,12 @@ body {
   font-size: var(--text-body);
   line-height: 1.5;
 }
+
+/* The content column. The padding is part of the width, so at the
+   desktop frame the gutters come out at the 106px of the design. */
+@utility container-page {
+  width: 100%;
+  max-width: calc(var(--container-content) + 2 * 24px);
+  margin-inline: auto;
+  padding-inline: 24px;
+}
