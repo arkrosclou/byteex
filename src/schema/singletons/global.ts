@@ -14,7 +14,7 @@ export const global = singleton({
       fields.text({ label: 'Message', validation: { isRequired: true } }),
       {
         label: 'Announcement bar',
-        description: 'Three on desktop, only the first one on mobile.',
+        description: 'Three on desktop. Mobile shows only the shipping one.',
         itemLabel: (props) => props.value || 'Message',
       }
     ),
