@@ -32,16 +32,34 @@
   /* The smaller heading, used by the green impact band. */
   --text-h4: 24px;
   --text-h4--line-height: 1.3;
+  /* Section labels and the faq questions. */
+  --text-h5: 20px;
+  --text-h5--line-height: 1.4;
+  /* The one heading the mobile design sizes down. */
+  --text-hero-sm: 26px;
+  --text-hero-sm--line-height: 1.2;
   --text-body: 15px;
   --text-body--line-height: 1.5;
   --text-small: 12px;
   --text-small--line-height: 1.5;
 
-  /* Content column, and the narrower card grids that sit inside it. */
+  /* Content column, and the narrower blocks that sit centred inside it.
+     Every one of these is measured off the design. */
   --container-content: 1280px;
   --container-cards: 1120px;
+  /* A lead paragraph under a centred heading. */
+  --container-lead: 590px;
+  --container-stats: 680px;
+  --container-trust: 584px;
+  --container-collage: 600px;
+  --container-review: 414px;
+  --container-cta: 360px;
+  --container-payments: 235px;
 
   --spacing-section: 80px;
+
+  /* Cards barely lift off the page in the design. */
+  --shadow-card: 0 2px 10px rgb(0 0 0 / 0.04);
 }
 
 @theme inline {
@@ -60,6 +78,9 @@ body {
   font-family: var(--font-sans);
   font-size: var(--text-body);
   line-height: 1.5;
+  /* Outfit sets about 9% tighter than the Sofia Pro of the design; this
+     brings the line breaks and block widths back in line. */
+  letter-spacing: 0.04em;
 }
 
 img,
@@ -73,6 +94,87 @@ svg {
   max-width: var(--container-content);
   margin-inline: auto;
   padding-inline: 18px;
+}
+
+/* Heading of a section. Six sections set the same three things. */
+@utility section-title {
+  @apply text-h2 font-medium text-brand;
+}
+
+/* Review and testimonial cards. */
+@utility card {
+  @apply rounded-lg border border-black/5 bg-white shadow-card;
+}
+
+/* An icon sitting in a filled circle. The fill comes from the caller,
+   since the trust bar uses the cool one and everything else the warm. */
+@utility icon-badge {
+  @apply shrink-0 rounded-full text-brand;
+}
+
+/* Drops the native disclosure triangle in every engine. */
+@utility marker-none {
+  list-style: none;
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+/* A press logo. The files are cropped differently from the design, so
+   both sides are capped and the tighter one wins. */
+@utility press-logo {
+  max-height: 48px;
+  max-width: 234px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* The warm wash that opens the page under the hero and closes it under
+   the trust bar. Both run behind their own section's content. */
+@utility warm-fade-in {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    z-index: -10;
+    height: 495px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-surface-warm),
+      transparent
+    );
+  }
+}
+
+@utility warm-fade-out {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: -10;
+    height: 285px;
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      var(--color-surface-warm)
+    );
+  }
+}
+
+/* The customer photo strip: two rows wide, one row on a phone. */
+@utility strip-rows {
+  & > li:nth-child(n + 9) {
+    display: none;
+  }
+  @media (width >= 64rem) {
+    & > li:nth-child(n + 9) {
+      display: block;
+    }
+  }
 }
 
 @utility brand-gradient {
