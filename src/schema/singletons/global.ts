@@ -21,7 +21,7 @@ export const global = singleton({
 
     logo: fields.object(
       {
-        file: image('File', 'brand'),
+        file: image('File', 'global'),
         alt: altText(),
       },
       { label: 'Logo' }
@@ -37,7 +37,7 @@ export const global = singleton({
     // separate marks. The card brands are fixed and never restyled.
     payments: fields.object(
       {
-        file: image('Image', 'payments'),
+        file: image('Image', 'global'),
         alt: altText(),
       },
       { label: 'Payment icons' }

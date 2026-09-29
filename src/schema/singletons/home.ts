@@ -35,7 +35,7 @@ export const home = singleton({
         cta: cta(),
         review: fields.object(
           {
-            avatar: image('Photo', 'hero'),
+            avatar: image('Photo', 'home'),
             name: fields.text({
               label: 'Name',
               validation: { isRequired: true },
@@ -47,7 +47,7 @@ export const home = singleton({
           { label: 'Review card' }
         ),
         images: fields.array(
-          fields.object({ file: image('Image', 'hero'), alt: altText() }),
+          fields.object({ file: image('Image', 'home'), alt: altText() }),
           {
             label: 'Collage',
             itemLabel: (props) => props.fields.alt.value || 'Image',
@@ -64,7 +64,7 @@ export const home = singleton({
           validation: { isRequired: true },
         }),
         logos: fields.array(
-          fields.object({ file: image('Logo', 'press'), alt: altText() }),
+          fields.object({ file: image('Logo', 'home'), alt: altText() }),
           {
             label: 'Press logos',
             itemLabel: (props) => props.fields.alt.value || 'Logo',
@@ -85,7 +85,7 @@ export const home = singleton({
           }
         ),
         gallery: fields.array(
-          fields.object({ file: image('Image', 'product'), alt: altText() }),
+          fields.object({ file: image('Image', 'home'), alt: altText() }),
           {
             label: 'Gallery',
             itemLabel: (props) => props.fields.alt.value || 'Image',
@@ -108,7 +108,7 @@ export const home = singleton({
           itemLabel: (props) => props.value || 'Paragraph',
         }),
         images: fields.array(
-          fields.object({ file: image('Image', 'founder'), alt: altText() }),
+          fields.object({ file: image('Image', 'home'), alt: altText() }),
           {
             label: 'Collage',
             itemLabel: (props) => props.fields.alt.value || 'Image',
@@ -141,7 +141,7 @@ export const home = singleton({
         title: title(),
         lead: body('Lead'),
         strip: fields.array(
-          fields.object({ file: image('Image', 'fans'), alt: altText() }),
+          fields.object({ file: image('Image', 'home'), alt: altText() }),
           {
             label: 'Photo strip',
             itemLabel: (props) => props.fields.alt.value || 'Image',
@@ -185,7 +185,7 @@ export const home = singleton({
           }
         ),
         images: fields.array(
-          fields.object({ file: image('Image', 'faq'), alt: altText() }),
+          fields.object({ file: image('Image', 'home'), alt: altText() }),
           {
             label: 'Collage',
             itemLabel: (props) => props.fields.alt.value || 'Image',
@@ -224,7 +224,7 @@ export const home = singleton({
         title: title(),
         lead: body('Lead'),
         images: fields.array(
-          fields.object({ file: image('Image', 'find'), alt: altText() }),
+          fields.object({ file: image('Image', 'home'), alt: altText() }),
           {
             label: 'Collage',
             itemLabel: (props) => props.fields.alt.value || 'Image',
