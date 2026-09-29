@@ -1,0 +1,30 @@
+{
+  "announcement": [
+    "CONSCIOUSLY MADE BUTTER SOFT STAPLES FOR EVERY DAY (OR NIGHT)",
+    "FREE SHIPPING on orders > $200",
+    "easy 45 day return window."
+  ],
+  "logo": {
+    "file": "/images/global/logo/file.svg",
+    "alt": "Byteex"
+  },
+  "shippingNote": "Ships in 1-2 Days",
+  "payments": {
+    "file": "/images/global/payments/file.png",
+    "alt": "Amex, Apple Pay, Diners Club, Discover, Google Pay, Mastercard, PayPal, Shop Pay and Visa accepted"
+  },
+  "trustItems": [
+    {
+      "icon": "truck",
+      "text": "FREE Shipping on Orders over $200"
+    },
+    {
+      "icon": "shield",
+      "text": "Over 500+ 5 Star Reviews Online"
+    },
+    {
+      "icon": "leaf",
+      "text": "Made ethically and responsibly."
+    }
+  ]
+}

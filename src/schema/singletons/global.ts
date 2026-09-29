@@ -14,14 +14,14 @@ export const global = singleton({
       fields.text({ label: 'Message', validation: { isRequired: true } }),
       {
         label: 'Announcement bar',
-        description: 'Three on desktop, only the first one on mobile.',
+        description: 'Three on desktop. Mobile shows only the shipping one.',
         itemLabel: (props) => props.value || 'Message',
       }
     ),
 
     logo: fields.object(
       {
-        file: image('File', 'brand'),
+        file: image('File', 'global'),
         alt: altText(),
       },
       { label: 'Logo' }
@@ -33,15 +33,14 @@ export const global = singleton({
       validation: { isRequired: true },
     }),
 
-    payments: fields.array(
-      fields.object({
-        file: image('Icon', 'payments'),
-        alt: altText(),
-      }),
+    // One combined image, the way the design has it, rather than nine
+    // separate marks. The card brands are fixed and never restyled.
+    payments: fields.object(
       {
-        label: 'Payment icons',
-        itemLabel: (props) => props.fields.alt.value || 'Icon',
-      }
+        file: image('Image', 'global'),
+        alt: altText(),
+      },
+      { label: 'Payment icons' }
     ),
 
     trustItems: fields.array(
