@@ -33,7 +33,7 @@
     "images": [
       {
         "file": "/images/home/hero/images/0/file.jpg",
-        "alt": "Model in a patterned lounge set"
+        "alt": "Model in a grey knit lounge set"
       },
       {
         "file": "/images/home/hero/images/1/file.jpg",
@@ -97,35 +97,35 @@
     "gallery": [
       {
         "file": "/images/home/product/gallery/0/file.jpg",
-        "alt": "White robe, front view"
+        "alt": "Model wearing the white robe"
       },
       {
         "file": "/images/home/product/gallery/1/file.jpg",
-        "alt": "White robe, patterned set"
+        "alt": "Model in a grey knit lounge set"
       },
       {
         "file": "/images/home/product/gallery/2/file.jpg",
-        "alt": "White robe worn on a sofa"
+        "alt": "Model reading on a sofa in loungewear"
       },
       {
         "file": "/images/home/product/gallery/3/file.jpg",
-        "alt": "White robe, detail of the tie"
+        "alt": "Model opening the curtains in loungewear"
       },
       {
         "file": "/images/home/product/gallery/4/file.jpg",
-        "alt": "White robe, sleeve detail"
+        "alt": "Model in a patterned lounge set"
       },
       {
         "file": "/images/home/product/gallery/5/file.jpg",
-        "alt": "White robe, side view"
+        "alt": "Model in a green shirt with her arms raised"
       },
       {
         "file": "/images/home/product/gallery/6/file.jpg",
-        "alt": "White robe, back view"
+        "alt": "Model wearing the white robe"
       },
       {
         "file": "/images/home/product/gallery/7/file.jpg",
-        "alt": "White robe, full length"
+        "alt": "Model in a grey knit lounge set"
       }
     ],
     "caption": "White Robe"
@@ -144,15 +144,15 @@
     "images": [
       {
         "file": "/images/home/founder/images/0/file.jpg",
-        "alt": "Founder wearing the white robe"
+        "alt": "Model in a grey knit lounge set"
       },
       {
         "file": "/images/home/founder/images/1/file.jpg",
-        "alt": "Model in a patterned lounge set"
+        "alt": "Model wearing the white robe"
       },
       {
         "file": "/images/home/founder/images/2/file.jpg",
-        "alt": "Model relaxing in loungewear"
+        "alt": "Model opening the curtains in loungewear"
       }
     ],
     "cta": {
@@ -192,35 +192,35 @@
     "strip": [
       {
         "file": "/images/home/testimonials/strip/0/file.jpg",
-        "alt": "Customer in the white robe"
+        "alt": "Model wearing the white robe"
       },
       {
         "file": "/images/home/testimonials/strip/1/file.jpg",
-        "alt": "Customer in a patterned lounge set"
+        "alt": "Model in a grey knit lounge set"
       },
       {
         "file": "/images/home/testimonials/strip/2/file.jpg",
-        "alt": "Customer reading in loungewear"
+        "alt": "Model reading on a sofa in loungewear"
       },
       {
         "file": "/images/home/testimonials/strip/3/file.jpg",
-        "alt": "Customer in the white robe"
+        "alt": "Model opening the curtains in loungewear"
       },
       {
         "file": "/images/home/testimonials/strip/4/file.jpg",
-        "alt": "Customer in a patterned lounge set"
+        "alt": "Model in a patterned lounge set"
       },
       {
         "file": "/images/home/testimonials/strip/5/file.jpg",
-        "alt": "Customer reading in loungewear"
+        "alt": "Model in a green shirt with her arms raised"
       },
       {
         "file": "/images/home/testimonials/strip/6/file.jpg",
-        "alt": "Customer in the white robe"
+        "alt": "Model wearing the white robe"
       },
       {
         "file": "/images/home/testimonials/strip/7/file.jpg",
-        "alt": "Customer in a patterned lounge set"
+        "alt": "Model in a grey knit lounge set"
       }
     ],
     "items": [
@@ -278,19 +278,19 @@
     "images": [
       {
         "file": "/images/home/faq/images/0/file.jpg",
-        "alt": "Model in the white robe"
+        "alt": "Model in a green shirt with her arms raised"
       },
       {
         "file": "/images/home/faq/images/1/file.jpg",
-        "alt": "Model in a patterned lounge set"
+        "alt": "Model in a grey knit lounge set"
       },
       {
         "file": "/images/home/faq/images/2/file.jpg",
-        "alt": "Model reading in loungewear"
+        "alt": "Model reading on a sofa in loungewear"
       },
       {
         "file": "/images/home/faq/images/3/file.jpg",
-        "alt": "Model in the white robe, detail"
+        "alt": "Model in a patterned lounge set"
       }
     ]
   },
@@ -320,7 +320,7 @@
     "images": [
       {
         "file": "/images/home/findSomething/images/0/file.jpg",
-        "alt": "Model in the white robe"
+        "alt": "Model in a green shirt with her arms raised"
       },
       {
         "file": "/images/home/findSomething/images/1/file.jpg",
@@ -328,7 +328,7 @@
       },
       {
         "file": "/images/home/findSomething/images/2/file.jpg",
-        "alt": "Model reading in loungewear"
+        "alt": "Model in a grey knit lounge set"
       }
     ],
     "cta": {
