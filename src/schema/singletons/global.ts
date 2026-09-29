@@ -33,15 +33,14 @@ export const global = singleton({
       validation: { isRequired: true },
     }),
 
-    payments: fields.array(
-      fields.object({
-        file: image('Icon', 'payments'),
-        alt: altText(),
-      }),
+    // One combined image, the way the design has it, rather than nine
+    // separate marks. The card brands are fixed and never restyled.
+    payments: fields.object(
       {
-        label: 'Payment icons',
-        itemLabel: (props) => props.fields.alt.value || 'Icon',
-      }
+        file: image('Image', 'payments'),
+        alt: altText(),
+      },
+      { label: 'Payment icons' }
     ),
 
     trustItems: fields.array(
