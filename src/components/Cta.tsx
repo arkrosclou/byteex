@@ -15,13 +15,13 @@ export function Cta({ cta, stars, ratingLabel, className }: Props) {
     <div className={className}>
       <a
         href={cta.href}
-        className="bg-brand font-button inline-flex h-14 items-center justify-center gap-3 rounded-md px-8 text-white"
+        className="inline-flex h-14 w-full items-center justify-center gap-3 rounded-md bg-brand px-8 font-button text-white lg:w-cta"
       >
         {cta.label}
-        <Icon name="arrow" className="h-[1em] w-[1em]" />
+        <Icon name="arrow" className="size-[1em]" />
       </a>
       {ratingLabel && stars !== undefined && (
-        <p className="text-small text-muted mt-3 flex items-center justify-center gap-2">
+        <p className="mt-3 flex items-center justify-center gap-2 text-small text-muted">
           <Stars value={stars} />
           <span>{ratingLabel}</span>
         </p>

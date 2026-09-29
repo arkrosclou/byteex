@@ -4,73 +4,48 @@ import { Img } from '../Img'
 import { Stars } from '../Stars'
 
 import type { Home } from '@/lib/content'
-
-// The middle photo of the collage is taller than the two beside it.
-const COLLAGE = [
-  'basis-[32%] aspect-[123/167] lg:aspect-[221/317]',
-  'basis-[36%] aspect-[132/217] lg:aspect-[256/418]',
-  'basis-[32%] aspect-[122/167] lg:aspect-[233/317]',
-]
+import { CollageLayout1 } from '@/components/collages/CollageLayout1'
 
 export function Hero({ data }: { data: Home['hero'] }) {
   return (
     <section
       aria-labelledby="hero-title"
-      className="container-page pt-5 lg:pt-16"
+      className="container-page overflow-x-clip pt-5 -mb-14 lg:-mb-18.5 lg:pt-16"
     >
-      {/* One column on mobile, and on desktop the collage moves into a
-          second column beside the copy. */}
-      <div className="grid gap-y-8 lg:grid-cols-2 lg:gap-x-6">
+      <div className="grid gap-y-8 lg:grid-cols-10 lg:gap-x-6">
         <h1
           id="hero-title"
-          className="text-[26px]/tight text-brand text-center lg:col-start-1 lg:row-start-1 lg:text-h1 lg:text-left"
+          className="text-center text-hero-sm font-medium text-brand lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:text-left lg:text-h1"
         >
           {data.title}
         </h1>
 
-        <div className="relative lg:col-start-2 lg:row-span-3 lg:row-start-1">
-          {/* The warm band behind the photos, desktop only. It reaches
-              past them on the left and is flush on the right. */}
-          <div
-            aria-hidden="true"
-            className="from-surface-warm/20 to-surface-warm/70 absolute top-1/2 right-0 -left-3 hidden h-[45%] -translate-y-1/2 bg-linear-to-b lg:block"
-          />
-
-          <ul className="relative flex items-center justify-center gap-[2px] lg:gap-[3px]">
-            {data.images.map((image, i) => (
-              <li key={image.file} className={COLLAGE[i % 3]}>
-                <Img
-                  src={image.file}
-                  alt={image.alt}
-                  className="h-full w-full object-cover"
-                />
-              </li>
-            ))}
-          </ul>
+        <div className="lg:col-span-6 lg:col-start-5 lg:row-span-3 lg:row-start-1 lg:self-start">
+          <CollageLayout1 images={data.images} />
         </div>
 
-        <div className="lg:col-start-1 lg:row-start-2">
-          <ul className="mx-auto table space-y-6 text-left lg:mx-0 lg:space-y-8">
+        <div className="lg:col-span-4 lg:col-start-1 lg:row-start-2">
+          <ul className="mx-auto table space-y-5.5 text-left lg:mx-0">
             {data.bullets.map((bullet) => (
-              <li key={bullet.text} className="flex items-start gap-4">
+              <li key={bullet.text} className="flex items-start gap-4.5">
                 <Icon
                   name={bullet.icon}
-                  className="text-brand mt-px size-6 shrink-0"
+                  className="size-8 icon-badge bg-surface-warm p-1"
                 />
                 <span>{bullet.text}</span>
               </li>
             ))}
           </ul>
 
-          <Cta cta={data.cta} className="mt-8 text-center lg:text-left" />
+          <Cta cta={data.cta} className="mt-8" />
         </div>
 
-        <figure className="rounded-lg bg-white p-4 shadow-[0_4px_24px_rgba(0,0,0,0.08)] lg:col-start-1 lg:row-start-3">
-          <figcaption className="flex items-center gap-3">
+        <figure className="card p-4 lg:col-span-4 lg:col-start-1 lg:row-start-3 lg:max-w-review">
+          <figcaption className="flex items-center gap-2">
             <Img
               src={data.review.avatar}
               alt={data.review.name}
-              className="size-10 shrink-0 rounded-full object-cover"
+              className="size-8 shrink-0 rounded-full object-cover"
             />
             <span className="text-small text-brand">{data.review.name}</span>
             <Stars value={data.review.stars} />
@@ -78,7 +53,7 @@ export function Hero({ data }: { data: Home['hero'] }) {
               {data.review.ratingLabel}
             </span>
           </figcaption>
-          <blockquote className="text-small mt-3">
+          <blockquote className="mt-3 text-small lg:leading-6">
             <p>{data.review.text}</p>
           </blockquote>
         </figure>
