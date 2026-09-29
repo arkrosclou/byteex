@@ -1,13 +1,26 @@
 @import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* The palette from the Figma file. Names say what a colour does on the
+   page, not what it looks like, so a section reads without opening the
+   design. Every colour in the mockup is one of these seven. */
+@theme {
+  /* Headings, button fills, icons, stat figures. */
+  --color-brand: #01005b;
+  /* Running copy: bullets, paragraphs, review text. */
+  --color-body: #676869;
+  /* The quieter line beside the stars. */
+  --color-muted: #828282;
+  /* Stars, and nothing else. */
+  --color-star: #ffb801;
+  /* The tick on "Ships in 1-2 Days". */
+  --color-success: #1fad40;
+  /* Warm bands: announcement bar, as seen in, the circles behind icons. */
+  --color-surface-warm: #f9f0e5;
+  /* Cool fills: cards, and the grey sections they sit in. */
+  --color-surface-cool: #f0eeef;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -15,7 +28,7 @@
 /* No dark mode: the design is light only. */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #fff;
+  color: var(--color-body);
   font-family: Arial, Helvetica, sans-serif;
 }
