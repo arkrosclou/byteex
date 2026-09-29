@@ -8,7 +8,7 @@ import type { Home } from '@/lib/content'
 export function Hero({ data }: { data: Home['hero'] }) {
   return (
     <section aria-labelledby="hero-title">
-      <h1 id="hero-title" className="text-[26px]/tight lg:text-h1">
+      <h1 id="hero-title" className="text-[26px]/tight text-brand lg:text-h1">
         {data.title}
       </h1>
 
@@ -27,8 +27,10 @@ export function Hero({ data }: { data: Home['hero'] }) {
         <Img src={data.review.avatar} alt={data.review.name} />
         <figcaption>
           <Stars value={data.review.stars} />
-          <span className="text-small">{data.review.ratingLabel}</span>
-          <span className="text-small">{data.review.name}</span>
+          <span className="text-small text-muted">
+            {data.review.ratingLabel}
+          </span>
+          <span className="text-small text-brand">{data.review.name}</span>
         </figcaption>
         <blockquote>
           <p>{data.review.text}</p>

@@ -16,7 +16,7 @@ export function Stars({ value }: { value: number }) {
     <span
       role="img"
       aria-label={`Rated ${score} out of 5`}
-      className="relative inline-flex"
+      className="relative inline-flex text-star"
     >
       <span aria-hidden="true" className="inline-flex opacity-25">
         {row}
