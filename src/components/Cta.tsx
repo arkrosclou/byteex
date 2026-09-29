@@ -12,7 +12,7 @@ type Props = {
 export function Cta({ cta, stars, ratingLabel }: Props) {
   return (
     <div>
-      <a href={cta.href}>
+      <a href={cta.href} className="font-button">
         {cta.label}
         <Icon name="arrow" className="h-[1em] w-[1em]" />
       </a>
