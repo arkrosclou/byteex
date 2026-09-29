@@ -194,6 +194,33 @@ const ICONS: Record<string, ReactElement> = {
       />
     </g>
   ),
+  check: (
+    <g>
+      <circle
+        cx="12"
+        cy="12"
+        r="9.25"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+      <path
+        d="M8 12.2 10.9 15 16 9.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+  ),
+  chevron: (
+    <path
+      d="M9 4.5 16.5 12 9 19.5"
+      stroke="currentColor"
+      strokeWidth="1.25"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  ),
   star: (
     <g transform="translate(2 2.909) scale(1.818)">
       <path
