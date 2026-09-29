@@ -1,4 +1,4 @@
-import { config } from '@keystatic/core';
+import { config } from '@keystatic/core'
 
 // Kept in the project root by convention. It stays an index: storage and
 // one import per schema, with the schemas themselves in src/schema/.
@@ -8,4 +8,4 @@ export default config({
   storage: { kind: 'local' },
   singletons: {},
   ui: { brand: { name: 'Byteex' } },
-});
+})
