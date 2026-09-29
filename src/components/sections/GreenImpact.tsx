@@ -5,15 +5,15 @@ import type { Home } from '@/lib/content'
 export function GreenImpact({ data }: { data: Home['greenImpact'] }) {
   return (
     <section aria-labelledby="green-impact-title">
-      <h2 id="green-impact-title" className="text-h4">
+      <h2 id="green-impact-title" className="text-h4 text-brand">
         {data.title}
       </h2>
       <ul>
         {data.stats.map((stat) => (
           <li key={stat.label}>
-            <Icon name={stat.icon} className="h-[1em] w-[1em]" />
+            <Icon name={stat.icon} className="h-[1em] w-[1em] text-brand" />
             <p>
-              <strong className="text-h3">{stat.value}</strong>{' '}
+              <strong className="text-h3 text-brand">{stat.value}</strong>{' '}
               <span className="text-small">{stat.label}</span>
             </p>
           </li>

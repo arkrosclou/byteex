@@ -5,7 +5,7 @@ import type { Home } from '@/lib/content'
 export function AsSeenIn({ data }: { data: Home['asSeenIn'] }) {
   return (
     <section aria-labelledby="as-seen-in-title">
-      <h2 id="as-seen-in-title" className="text-small">
+      <h2 id="as-seen-in-title" className="text-small text-body">
         {data.label}
       </h2>
       <ul>

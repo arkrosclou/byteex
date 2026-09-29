@@ -6,7 +6,7 @@ import type { Home } from '@/lib/content'
 export function Founder({ data }: { data: Home['founder'] }) {
   return (
     <section aria-labelledby="founder-title">
-      <h2 id="founder-title" className="text-h2">
+      <h2 id="founder-title" className="text-h2 text-brand">
         {data.title}
       </h2>
 

@@ -5,7 +5,7 @@ import type { Home } from '@/lib/content'
 export function Faq({ data }: { data: Home['faq'] }) {
   return (
     <section aria-labelledby="faq-title">
-      <h2 id="faq-title" className="text-h2">
+      <h2 id="faq-title" className="text-h2 text-brand">
         {data.title}
       </h2>
 
@@ -15,7 +15,7 @@ export function Faq({ data }: { data: Home['faq'] }) {
         {data.items.map((item, i) => (
           <li key={`${item.question}-${i}`}>
             <details name="faq" open={i === 0}>
-              <summary>{item.question}</summary>
+              <summary className="text-brand">{item.question}</summary>
               <p>{item.answer}</p>
             </details>
           </li>

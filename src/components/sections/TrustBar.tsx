@@ -14,7 +14,7 @@ export function TrustBar({ shippingNote, payments, trustItems }: Props) {
       <ul>
         {trustItems.map((item) => (
           <li key={item.text}>
-            <Icon name={item.icon} className="h-[1em] w-[1em]" />
+            <Icon name={item.icon} className="h-[1em] w-[1em] text-brand" />
             <span>{item.text}</span>
           </li>
         ))}
