@@ -17,7 +17,7 @@ export function Cta({ cta, stars, ratingLabel }: Props) {
         <Icon name="arrow" className="h-[1em] w-[1em]" />
       </a>
       {ratingLabel && stars !== undefined && (
-        <p>
+        <p className="text-small">
           <Stars value={stars} />
           <span>{ratingLabel}</span>
         </p>

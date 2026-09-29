@@ -5,7 +5,9 @@ import type { Home } from '@/lib/content'
 export function AsSeenIn({ data }: { data: Home['asSeenIn'] }) {
   return (
     <section aria-labelledby="as-seen-in-title">
-      <h2 id="as-seen-in-title">{data.label}</h2>
+      <h2 id="as-seen-in-title" className="text-small">
+        {data.label}
+      </h2>
       <ul>
         {data.logos.map((logo) => (
           <li key={logo.file}>

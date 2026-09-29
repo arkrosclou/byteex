@@ -6,7 +6,9 @@ import type { Home } from '@/lib/content'
 export function FindSomething({ data }: { data: Home['findSomething'] }) {
   return (
     <section aria-labelledby="find-something-title">
-      <h2 id="find-something-title">{data.title}</h2>
+      <h2 id="find-something-title" className="text-h2">
+        {data.title}
+      </h2>
       <p>{data.lead}</p>
 
       <ul>
