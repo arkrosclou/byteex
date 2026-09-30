@@ -10,7 +10,7 @@ export function Hero({ data }: { data: Home['hero'] }) {
   return (
     <section
       aria-labelledby="hero-title"
-      className="container-page overflow-x-clip pt-5 -mb-14 lg:-mb-18.5 lg:pt-16"
+      className="container-page overflow-x-clip pt-5 lg:-mb-18.5 lg:pt-16"
     >
       <div className="grid gap-y-8 lg:grid-cols-10 lg:gap-x-6">
         <h1
@@ -47,10 +47,16 @@ export function Hero({ data }: { data: Home['hero'] }) {
               alt={data.review.name}
               className="size-8 shrink-0 rounded-full object-cover"
             />
-            <span className="text-small text-brand">{data.review.name}</span>
-            <Stars value={data.review.stars} />
-            <span className="text-small text-muted">
-              {data.review.ratingLabel}
+            <span>
+              <span className="flex items-center gap-2">
+                <Stars value={data.review.stars} />
+                <span className="text-small text-muted">
+                  {data.review.ratingLabel}
+                </span>
+              </span>
+              <span className="block text-small text-brand">
+                {data.review.name}
+              </span>
             </span>
           </figcaption>
           <blockquote className="mt-3 text-small lg:leading-6">

@@ -3,16 +3,19 @@ import { CollageLayout3 } from '@/components/collages/CollageLayout3'
 
 export function Faq({ data }: { data: Home['faq'] }) {
   return (
-    <section aria-labelledby="faq-title" className="pt-22 pb-31">
+    <section
+      aria-labelledby="faq-title"
+      className="pt-14 pb-16 lg:pt-22 lg:pb-31"
+    >
       <div className="container-page grid gap-y-10 lg:grid-cols-10 lg:gap-x-6">
         <div className="lg:col-span-5 lg:col-start-2 lg:-ml-6">
-          <h2 id="faq-title" className="section-title">
+          <h2 id="faq-title" className="text-center section-title lg:text-left">
             {data.title}
           </h2>
 
           {/* Native details/summary: the accordion works with no script,
               keyboard included. The first one is open, as in the design. */}
-          <ul className="mt-14">
+          <ul className="mt-8 lg:mt-14">
             {data.items.map((item, i) => (
               <li
                 key={`${item.question}-${i}`}

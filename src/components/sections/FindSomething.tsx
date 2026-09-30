@@ -7,7 +7,7 @@ export function FindSomething({ data }: { data: Home['findSomething'] }) {
   return (
     <section
       aria-labelledby="find-something-title"
-      className="overflow-x-clip pt-20"
+      className="overflow-x-clip pt-14 lg:pt-20"
     >
       <div className="container-page text-center">
         <h2 id="find-something-title" className="section-title">

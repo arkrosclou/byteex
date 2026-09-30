@@ -6,7 +6,7 @@ export function GreenImpact({ data }: { data: Home['greenImpact'] }) {
   return (
     <section
       aria-labelledby="green-impact-title"
-      className="bg-surface-cool pt-10 pb-8"
+      className="bg-surface-cool pt-12 pb-10 lg:pt-10 lg:pb-8"
     >
       <div className="container-page text-center">
         <h2 id="green-impact-title" className="text-h4 font-medium text-brand">
