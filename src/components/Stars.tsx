@@ -9,7 +9,7 @@ const POSITIONS = [0, 1, 2, 3, 4]
 export function Stars({ value }: { value: number }) {
   const score = Math.min(5, Math.max(0, value))
   const row = POSITIONS.map((i) => (
-    <Icon key={i} name="star" className="h-[1em] w-[1em] shrink-0" />
+    <Icon key={i} name="star" className="size-[1em] shrink-0" />
   ))
 
   return (

@@ -6,7 +6,7 @@ import type { Global } from '@/lib/content'
 
 export function SiteHeader({ logo }: { logo: Global['logo'] }) {
   return (
-    <header>
+    <header className="container-page pt-4 text-center lg:pt-8 lg:text-left">
       <Link href="/">
         <Img src={logo.file} alt={logo.alt} />
       </Link>
