@@ -30,6 +30,7 @@ export function Testimonials({ data }: { data: Home['testimonials'] }) {
             <Img
               src={image.file}
               alt={image.alt}
+              sizes="(min-width: 1024px) 9vw, 25vw"
               className="aspect-[122/131] w-full object-cover"
             />
           </li>

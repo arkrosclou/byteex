@@ -16,7 +16,12 @@ export function AsSeenIn({ data }: { data: Home['asSeenIn'] }) {
         <ul className="mt-5 press-strip">
           {data.logos.map((logo) => (
             <li key={logo.file}>
-              <Img src={logo.file} alt={logo.alt} className="press-logo" />
+              <Img
+                src={logo.file}
+                alt={logo.alt}
+                sizes="234px"
+                className="press-logo"
+              />
             </li>
           ))}
         </ul>

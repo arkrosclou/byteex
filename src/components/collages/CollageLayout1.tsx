@@ -5,6 +5,7 @@ type Image = { file: string; alt: string }
 
 interface CollageLayout1Props {
   images: readonly Image[]
+  priority?: boolean
 }
 
 const COLLAGE = [
@@ -13,7 +14,7 @@ const COLLAGE = [
   'basis-[29%] -ml-[5%] z-2',
 ]
 
-export function CollageLayout1({ images }: CollageLayout1Props) {
+export function CollageLayout1({ images, priority }: CollageLayout1Props) {
   return (
     <ul
       className={cx(
@@ -26,6 +27,7 @@ export function CollageLayout1({ images }: CollageLayout1Props) {
           <Img
             src={image.file}
             alt={image.alt}
+            priority={priority}
             className="h-full w-full object-cover"
           />
         </li>

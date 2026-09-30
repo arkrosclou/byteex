@@ -17,6 +17,7 @@ export function TrustBar({ shippingNote, payments, trustItems }: Props) {
           <Img
             src={payments.file}
             alt={payments.alt}
+            sizes="235px"
             className="w-payments object-contain"
           />
         </div>
