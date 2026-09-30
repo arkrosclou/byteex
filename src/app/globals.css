@@ -124,7 +124,7 @@ svg {
    both sides are capped and the tighter one wins. */
 @utility press-logo {
   max-height: 48px;
-  max-width: 234px;
+  max-width: min(234px, 100%);
   width: auto;
   object-fit: contain;
 }
@@ -183,4 +183,68 @@ svg {
     color-mix(in srgb, var(--color-surface-warm) 0%, transparent),
     color-mix(in srgb, var(--color-surface-warm) 100%, transparent)
   );
+}
+
+/* Horizontal carousel. One card at a time on mobile, with the
+   neighbours just showing at the edges; on desktop the track stops
+   scrolling and the cards share the row. */
+@utility slider-track {
+  /* the side padding is half the slack left by a 78% card, so the
+     first and last one land centred; the block padding keeps the card
+     shadow out of the scroll clip */
+  @apply -my-3 flex gap-10 overflow-x-auto px-[11%] py-3;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  & > * {
+    flex: 0 0 78%;
+    scroll-snap-align: center;
+  }
+  @media (width >= 64rem) {
+    @apply -mx-3 px-3;
+    & > * {
+      flex: 1 1 0;
+    }
+  }
+}
+
+@utility slider-arrow {
+  @apply absolute top-1/2 size-9.5 -translate-y-1/2 text-body;
+  @apply cursor-pointer disabled:cursor-default disabled:opacity-30;
+}
+
+/* The press logos scroll on mobile and spread out on desktop. */
+@utility press-strip {
+  @apply flex gap-x-6 overflow-x-auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  & > li {
+    @apply flex shrink-0 basis-1/3 items-center justify-center;
+    scroll-snap-align: center;
+  }
+  @media (width >= 64rem) {
+    @apply justify-between overflow-visible;
+    & > li {
+      @apply basis-auto;
+    }
+  }
+}
+
+/* The product gallery: full-width slides, no gap between them. */
+@utility gallery-track {
+  @apply flex overflow-x-auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  & > * {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
 }
