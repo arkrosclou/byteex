@@ -16,7 +16,7 @@
       },
       {
         "icon": "waves",
-        "text": "Our signature fabric is incredibly comfortable — unlike anything you've ever felt."
+        "text": "Our signature fabric is incredibly comfortable \u2014 unlike anything you've ever felt."
       }
     ],
     "cta": {
@@ -287,10 +287,6 @@
       {
         "file": "/images/home/faq/images/2/file.jpg",
         "alt": "Model reading on a sofa in loungewear"
-      },
-      {
-        "file": "/images/home/faq/images/3/file.jpg",
-        "alt": "Model in a patterned lounge set"
       }
     ]
   },
@@ -334,8 +330,6 @@
     "cta": {
       "label": "Customize Your Outfit",
       "href": "#"
-    },
-    "stars": 5,
-    "ratingLabel": "Over 500+ 5 Star Reviews Online"
+    }
   }
 }

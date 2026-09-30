@@ -230,9 +230,8 @@ export const home = singleton({
             itemLabel: (props) => props.fields.alt.value || 'Image',
           }
         ),
+        /* no rating line here: the design puts that in the trust bar */
         cta: cta(),
-        stars: stars(),
-        ratingLabel: ratingLabel(),
       },
       { label: 'Find something you love' }
     ),
