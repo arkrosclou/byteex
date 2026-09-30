@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Byteex
 
-## Getting Started
+One long product landing page, rebuilt from a Figma file. Next.js App
+Router, Tailwind CSS 4, and Keystatic as the CMS — every word and every
+photo on the page comes out of `content/`, nothing is hard-coded in a
+component.
 
-First, run the development server:
+The CMS uses Keystatic's `local` storage: the admin runs alongside the
+dev server and writes straight into the working tree, so an edit shows
+up as a normal file change in git.
+
+## Running it
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The page is at `http://localhost:3000`, the editor at
+`http://localhost:3000/keystatic`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Script           | What it does                                        |
+| ---------------- | --------------------------------------------------- |
+| `npm run dev`    | dev server                                          |
+| `npm run build`  | production build                                    |
+| `npm run images` | re-reads the pixel size of every upload (see below) |
+| `npm run lint`   | eslint                                              |
+| `npm run format` | prettier, including the Tailwind class sorter       |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`predev` and `prebuild` run `npm run images` on their own, so the sizes
+are never stale.
 
-## Learn More
+## Layout
 
-To learn more about Next.js, take a look at the following resources:
+```
+keystatic.config.ts      thin index: storage, brand, singletons
+src/schema/singletons/   one file per singleton
+src/schema/fields/       factories for the field shapes that repeat
+content/                 global.json, home.json
+public/images/           uploads, in folders Keystatic names itself
+src/app/                 the page, and the admin route
+src/components/sections/ one file per band of the page
+src/components/collages/ the three photo arrangements
+src/lib/                 the content reader, the image size manifest
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The content is split into two singletons. `global` holds what is not
+part of any one section — the logo, the announcement bar, the payment
+strip. `home` holds the sections in the order they appear.
