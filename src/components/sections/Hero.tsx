@@ -21,7 +21,7 @@ export function Hero({ data }: { data: Home['hero'] }) {
         </h1>
 
         <div className="lg:col-span-6 lg:col-start-5 lg:row-span-3 lg:row-start-1 lg:self-start">
-          <CollageLayout1 images={data.images} />
+          <CollageLayout1 images={data.images} priority />
         </div>
 
         <div className="lg:col-span-4 lg:col-start-1 lg:row-start-2">
@@ -45,6 +45,7 @@ export function Hero({ data }: { data: Home['hero'] }) {
             <Img
               src={data.review.avatar}
               alt={data.review.name}
+              sizes="32px"
               className="size-8 shrink-0 rounded-full object-cover"
             />
             <span>

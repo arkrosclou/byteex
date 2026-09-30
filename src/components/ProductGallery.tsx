@@ -45,6 +45,7 @@ export function ProductGallery({ gallery, caption }: Props) {
               <Img
                 src={image.file}
                 alt={image.alt}
+                sizes="(min-width: 1024px) 30vw, 80vw"
                 className="aspect-[433/648] w-full object-cover"
               />
             </li>
@@ -65,6 +66,7 @@ export function ProductGallery({ gallery, caption }: Props) {
                 <Img
                   src={image.file}
                   alt=""
+                  sizes="40px"
                   className={cx(
                     'aspect-[33/40] w-full object-cover',
                     i === active && 'outline-2 -outline-offset-2 outline-white'
